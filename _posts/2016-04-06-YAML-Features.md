@@ -4,12 +4,12 @@ title:             "YAML Custom Features"
 menutitle:         "YAML Features"
 date:              2016-04-06 00:40:00 +0300
 tags:              Jekyll YAML Features Explained
-category:          Features
+category:          Old Features
 author:            jwillmer
-cover:             /assets/mountain-alternative-cover.jpg
+cover:             /assets/universe-alternative-cover.jpg
 published:         true
 redirect_from:     "/YAML-Features-Redirect/"
-cover:             /assets/mountain-alternative-cover.jpg
+cover:             /assets/universe-alternative-cover.jpg
 language:          EN
 ---
 
@@ -82,7 +82,7 @@ weight:       5
 ---
 ```
 
-The default language of your blog is defined in the `_config.yml` file but if you like to write a post/page in another language you can use the `language` attribute. This will specify that you are using another language on this page for search engines. Please use on of the [language codes](http://www.w3schools.com/tags/ref_language_codes.asp) as value. 
+The default language of your blog is defined in the `_config.yml` file but if you like to write a post/page in another language you can use the `language` attribute. This will specify that you are using another language on this page for search engines. Please use on of the [language codes](http://www.w3schools.com/tags/ref_language_codes.asp) as value.
 
 ```bash
 ---        

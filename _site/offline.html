@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>jekyllDecent</title>
-    <meta name="description" content="This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.">
+    <title>Labby Yang</title>
+    <meta name="description" content="Record my life.etc">
   
     
-    <meta name="keywords" content="demo, theme, example, github, jekyll, features">
+    <meta name="keywords" content="Labby, Ruby, CGC, CodingGirlsClub">
     
 
     <meta name="HandheldFriendly" content="True">
@@ -19,25 +19,25 @@
 	
     <!-- Open Graph data -->
 
-    <meta property="og:title" content="jekyllDecent">
+    <meta property="og:title" content="Labby Yang">
 	<meta property="og:type" content="website">
 
 
 
 
-<meta property="og:image" content="/assets/mountain-cover.jpg">
+<meta property="og:image" content="/assets/universe-cover.jpg">
 
 
-<meta property="og:site_name" content="jekyllDecent">
-<meta property="og:description" content="This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.">
+<meta property="og:site_name" content="Labby Yang">
+<meta property="og:description" content="Record my life.etc">
 
 
 <meta property="og:url" content="/offline">
 
 
     
-	<meta property="article:author" content="http://jwillmer.de/about">
-	<link rel="author" href="http://jwillmer.de/about">
+	<meta property="article:author" content="http://weibo/popantelop">
+	<link rel="author" href="http://weibo/popantelop">
 
 
 
@@ -49,11 +49,11 @@
 <meta name="twitter:card" content="summary">
 
 
-<meta name="twitter:site" content="@jenswillmer">
+<meta name="twitter:site" content="@popantelop">
 
 
 
-<meta name="twitter:title" content="jekyllDecent">
+<meta name="twitter:title" content="Labby Yang">
 
 
 
@@ -61,15 +61,15 @@
 <meta name="twitter:url" content="/offline">
 
 
-<meta name="twitter:description" content="This is the jekyllTheme example blog. It only exists to demonstrate how the theme looks and feels.">
+<meta name="twitter:description" content="Record my life.etc">
 
-<meta name="twitter:image:src" content="/assets/mountain-cover.jpg">
+<meta name="twitter:image:src" content="/assets/universe-cover.jpg">
 <!-- End: Twitter data -->	
 
     <link href="https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield%7CMerriweather:300italic,700,300,700italic%7COpen+Sans:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/screen.css">
     <link rel="stylesheet" href="/css/prism.css">
-    <link rel="alternate" type="application/rss+xml" title="jekyllDecent" href="/feed.xml">
+    <link rel="alternate" type="application/rss+xml" title="Labby Yang" href="/feed.xml">
 
     <!-- https://github.com/joshbuchea/HEAD -->
     <link rel="icon" href="/assets/favicon-16.png" sizes="16x16" type="image/png">
@@ -82,9 +82,9 @@
     <div class="site-wrapper">
         
 
-<header class="main-header detail-page image-bg  has-cover" style="background-image: url(/assets/mountain-cover.jpg)">
-    <h1 class="page-title"><a href="/" title="jekyllDecent">jekyllDecent</a></h1>
-    <h2 class="page-description">Example Blog</h2>
+<header class="main-header detail-page image-bg  has-cover" style="background-image: url(/assets/universe-cover.jpg)">
+    <h1 class="page-title"><a href="/" title="Labby Yang">Labby Yang</a></h1>
+    <h2 class="page-description">Try Everything U Love</h2>
     <div class="nav">
         <ul>
             <li><a class="page-link" href="/" title="Home">Home</a></li>
@@ -152,6 +152,273 @@
     <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
         <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">8.7 CGC Meeting Record</h1>
+            <section class="post-meta">
+                <time datetime="2016-08-07T00:00:00+08:00" itemprop="datePublished">Aug 7, 2016</time> 
+                on
+                
+                <span><a href="">meetingrecord</a></span>
+                
+            </section>
+        </header>
+
+        <section class="post-content short-diver" itemprop="articleBody">
+            <h3 id="section">上周回顾</h3>
+
+<ul>
+  <li>大家普遍反映《Ruby基础教程》中第三章关于文件IO的内容难以理解。</li>
+  <li>代码小作业<a href="https://tower.im/projects/d59c4198d1b84822aa345bb363566d25/docs/dcacfe724a5d438cb81061dd43dc0434/">计算小程序</a>，一名学员完成</li>
+  <li>Coursera 第一周课程，全部学员完成</li>
+</ul>
+
+<h3 id="marks">Marks</h3>
+
+<ul>
+  <li>使用 <a href="https://gist.github.com/LabbyY/1bd09259564ca496e8cfc79cb642d5ee">Gist</a> 可以上传并分享 script</li>
+  <li>使用 <a href="https://github.com/getlantern/lantern">Lantern</a> 翻越 GFW</li>
+</ul>
+
+<h3 id="section-1">本节课相关代码/命令</h3>
+
+<h4 id="git">Git部分</h4>
+
+<pre><code class="language-ruby">git clone git@github.com:CocaColaCat/SZCGC2016.git alias #从指定地址下载repo并起一个别名
+#Fork the Repository, 然后
+git remote add alias.checker git@github.com:LabbyY/SZCGC2016.git # 添加一个新的远程repo并将该别名的checker引用至新repo
+git push alias.checker master
+#Pull Request, 然后就可以在原始reop的pull request list中看到该request
+</code></pre>
+
+<h4 id="section-2">计算小程序部分</h4>
+
+<ul>
+  <li>去掉换行符：
+    <ul>
+      <li>(Kernal.gets()方法得到的输入值都有换行符，因此在运算和输出时要将换行符去掉)</li>
+    </ul>
+
+    <p><code>attr = gets.chomp</code></p>
+  </li>
+  <li>
+    <p><a href="https://ruby-china.org/topics/18512">一些关于字符串的语法糖</a></p>
+
+    <pre><code class="language-ruby">#以下代码新建字符串数组limit，并检查该数组中是否包含attr
+limit = %w(plus cut multi div)
+limit.include?(attr)
+</code></pre>
+  </li>
+  <li>
+    <p>查看原型</p>
+
+    <p><code>attr.inspect</code></p>
+  </li>
+  <li>
+    <p><a href="http://ruby-doc.org/core-1.8.7/Object.html#method-i-send">send</a>:通过符号调用方法</p>
+
+    <p><a href="http://ruby-doc.org/core-2.2.3/Symbol.html#method-i-to_sym">to_sym</a>:返回symbol对应的object</p>
+
+    <p><code>c.send :add op.to_sym</code></p>
+  </li>
+  <li>
+    <p>当需要直接访问外部连接时：</p>
+
+    <pre><code class="language-ruby">require 'open-uri' # open-uri API
+open('http://link') # 使用方法与file相同
+</code></pre>
+  </li>
+  <li>
+    <p>split方法将str按照空格符分隔为一个数组</p>
+
+    <p><code>str.split(" ")</code></p>
+  </li>
+  <li>
+    <p>代码块可以将自身传递给方法</p>
+
+    <p><code>arr.inject(0){|sum,i| sum +=1 if i.match(/UCanUup/); sum}</code></p>
+  </li>
+</ul>
+
+<h3 id="to-do-list">To-Do List</h3>
+<ul>
+  <li>Install <a href="https://github.com/robbyrussell/oh-my-zsh">zshell</a>  √</li>
+  <li>Read Go Pro Git</li>
+</ul>
+
+
+        </section>
+
+        <footer class="post-footer"> 
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+
+    
+
+    
+    
+
+    
+
+</div>
+        </footer>
+
+    </article>
+</main>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="post-header short-diver">
+            <h1 class="post-title" itemprop="name headline">7.31 CGC Meeting Record</h1>
+            <section class="post-meta">
+                <time datetime="2016-07-31T00:00:00+08:00" itemprop="datePublished">Jul 31, 2016</time> 
+                on
+                
+                <span><a href="">meetingrecord</a></span>
+                
+            </section>
+        </header>
+
+        <section class="post-content short-diver" itemprop="articleBody">
+            <h3 id="tips">Tips</h3>
+
+<ul>
+  <li>Vagrant 安装完毕后检查 vagrantfile</li>
+  <li>要在 <a href="http://Gitub.com">github</a> 上查找某关键词的相关内容，试着加 “<strong>awosome-</strong>” 前缀。如：<code>awesome-markdown</code>
+</li>
+  <li>
+<strong>irb</strong> 的好处在于可以帮助你实时执行代码。
+    <ul>
+      <li>使用 <code>gem install pry</code> 安装 pry（pry 对 irb 进行了封装，能够高亮显示关键词，便于阅读）</li>
+    </ul>
+  </li>
+  <li>
+<a href="http://ruby-doc.org">ruby-doc</a> 上有关于ruby core API 和 standard API 的说明。（据说核心库的文档还不错，标准库就很烂）</li>
+  <li>使用 <a href="https://gems.ruby-china.org">ruby-china</a> 上的更新源，将ruby的更新源修改为不会被墙的版本：<code>gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/</code>
+</li>
+</ul>
+
+<h4 id="markdown">关于Markdown</h4>
+
+<ul>
+  <li>
+<strong>Github Page</strong> 是 <a href="http://Gitub.com">github</a> 的一个功能，将 md 文件上传后就可以帮你自动生成静态博客。
+    <ul>
+      <li>可用的上传工具：Hexo, Octopress, Jeklly。 (Jeklly提供的模板可以一看)</li>
+    </ul>
+  </li>
+  <li>Gitbook Editor 可以用来写 md 书。</li>
+  <li>
+<a href="http://Gitub.com">Github</a> 和<a href="http://jianshu.com">简书</a>都可以识别并直接编辑 md 文件。</li>
+</ul>
+
+<h3 id="to-do-list">To-Do List</h3>
+
+<ul>
+  <li>尝试给 Windows 安装 Vagrant 及 Ruby on Rails。   √</li>
+  <li>熟悉使用 Github。     √</li>
+  <li>学习 <a href="https://www.coursera.org/learn/ruby-on-rails-intro">Coursera</a> 课程。     √</li>
+  <li>建立一个用 Markdown 写的博客。√</li>
+  <li>Try Git !   √</li>
+</ul>
+
+
+        </section>
+
+        <footer class="post-footer"> 
+            <div itemprop="author" itemscope itemtype="http://schema.org/Person">
+
+    
+
+    
+    
+
+    
+
+</div>
+        </footer>
+
+    </article>
+</main>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="content" role="main">
+    <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <header class="post-header short-diver">
             <h1 class="post-title" itemprop="name headline">Theme Installation and Usage</h1>
             <section class="post-meta">
                 <time datetime="2016-06-08T23:25:00+08:00" itemprop="datePublished">Jun 8, 2016</time> 
@@ -169,7 +436,7 @@
         </header>
 
         <section class="post-content short-diver" itemprop="articleBody">
-            <p>This is a blog template for a static site generator named <a href="https://jekyllrb.com/docs/home/">Jekyll</a> based on a <a href="https://ghost.org">Ghost</a> template named <a href="https://github.com/serenader2014/decent">Decent</a>. 
+            <p>This is a blog template for a static site generator named <a href="https://jekyllrb.com/docs/home/">Jekyll</a> based on a <a href="https://ghost.org">Ghost</a> template named <a href="https://github.com/serenader2014/decent">Decent</a>.
 If you like to see the theme in production have a look at <a href="http://jwillmer.de">jwillmer.de</a>.</p>
 
 <h2 id="screenshots">Screenshots</h2>
@@ -294,21 +561,21 @@ SOFTWARE.
     
     
     <div class="author-image">
-        <div class="img image-bg" style="background-image: url(/assets/jwillmer.jpg)">
-            <a class="hidden" href="/assets/jwillmer.jpg" itemprop="image">Jens Willmer's Picture</a>
+        <div class="img image-bg" style="background-image: url(/assets/LabbyY.jpg)">
+            <a class="hidden" href="/assets/LabbyY.jpg" itemprop="image">Labby Yang's Picture</a>
         </div>
     </div>
     
 
     <div class="short-diver">
-        <h4 class="author" itemprop="name">Jens Willmer</h4>
+        <h4 class="author" itemprop="name">Labby Yang</h4>
 
         <p itemprop="description">All about technology</p>
 
         <div class="author-meta">
-            <span class="author-location icon-location" itemprop="nationality">Germany</span>
-            <span class="author-stats"><i class="icon-stats"></i>4 posts</span>
-            <span class="author-link icon-link" itemprop="url"><a href="http://jwillmer.de/about">About</a></span>
+            <span class="author-location icon-location" itemprop="nationality">China</span>
+            <span class="author-stats"><i class="icon-stats"></i>0 posts</span>
+            <span class="author-link icon-link" itemprop="url"><a href="http://weibo/popantelop">About</a></span>
         </div>
     </div>
     
@@ -528,7 +795,7 @@ SOFTWARE.
 <h3 id="author-in-quote">Author in quote</h3>
 
 <pre><code>&gt; Our destiny offers not the cup of despair, but the chalice of opportunity. So let us seize it, not in fear, but in gladness.
-&gt; 
+&gt;
 &gt; &lt;cite&gt;——R.M. Nixon&lt;/cite&gt;
 </code></pre>
 
@@ -570,21 +837,21 @@ SOFTWARE.
     
     
     <div class="author-image">
-        <div class="img image-bg" style="background-image: url(/assets/jwillmer.jpg)">
-            <a class="hidden" href="/assets/jwillmer.jpg" itemprop="image">Jens Willmer's Picture</a>
+        <div class="img image-bg" style="background-image: url(/assets/LabbyY.jpg)">
+            <a class="hidden" href="/assets/LabbyY.jpg" itemprop="image">Labby Yang's Picture</a>
         </div>
     </div>
     
 
     <div class="short-diver">
-        <h4 class="author" itemprop="name">Jens Willmer</h4>
+        <h4 class="author" itemprop="name">Labby Yang</h4>
 
         <p itemprop="description">All about technology</p>
 
         <div class="author-meta">
-            <span class="author-location icon-location" itemprop="nationality">Germany</span>
-            <span class="author-stats"><i class="icon-stats"></i>4 posts</span>
-            <span class="author-link icon-link" itemprop="url"><a href="http://jwillmer.de/about">About</a></span>
+            <span class="author-location icon-location" itemprop="nationality">China</span>
+            <span class="author-stats"><i class="icon-stats"></i>0 posts</span>
+            <span class="author-link icon-link" itemprop="url"><a href="http://weibo/popantelop">About</a></span>
         </div>
     </div>
     
@@ -736,21 +1003,21 @@ language:       en
     
     
     <div class="author-image">
-        <div class="img image-bg" style="background-image: url(/assets/jwillmer.jpg)">
-            <a class="hidden" href="/assets/jwillmer.jpg" itemprop="image">Jens Willmer's Picture</a>
+        <div class="img image-bg" style="background-image: url(/assets/LabbyY.jpg)">
+            <a class="hidden" href="/assets/LabbyY.jpg" itemprop="image">Labby Yang's Picture</a>
         </div>
     </div>
     
 
     <div class="short-diver">
-        <h4 class="author" itemprop="name">Jens Willmer</h4>
+        <h4 class="author" itemprop="name">Labby Yang</h4>
 
         <p itemprop="description">All about technology</p>
 
         <div class="author-meta">
-            <span class="author-location icon-location" itemprop="nationality">Germany</span>
-            <span class="author-stats"><i class="icon-stats"></i>4 posts</span>
-            <span class="author-link icon-link" itemprop="url"><a href="http://jwillmer.de/about">About</a></span>
+            <span class="author-location icon-location" itemprop="nationality">China</span>
+            <span class="author-stats"><i class="icon-stats"></i>0 posts</span>
+            <span class="author-link icon-link" itemprop="url"><a href="http://weibo/popantelop">About</a></span>
         </div>
     </div>
     
@@ -934,21 +1201,21 @@ language:       en
     
     
     <div class="author-image">
-        <div class="img image-bg" style="background-image: url(/assets/jwillmer.jpg)">
-            <a class="hidden" href="/assets/jwillmer.jpg" itemprop="image">Jens Willmer's Picture</a>
+        <div class="img image-bg" style="background-image: url(/assets/LabbyY.jpg)">
+            <a class="hidden" href="/assets/LabbyY.jpg" itemprop="image">Labby Yang's Picture</a>
         </div>
     </div>
     
 
     <div class="short-diver">
-        <h4 class="author" itemprop="name">Jens Willmer</h4>
+        <h4 class="author" itemprop="name">Labby Yang</h4>
 
         <p itemprop="description">All about technology</p>
 
         <div class="author-meta">
-            <span class="author-location icon-location" itemprop="nationality">Germany</span>
-            <span class="author-stats"><i class="icon-stats"></i>4 posts</span>
-            <span class="author-link icon-link" itemprop="url"><a href="http://jwillmer.de/about">About</a></span>
+            <span class="author-location icon-location" itemprop="nationality">China</span>
+            <span class="author-stats"><i class="icon-stats"></i>0 posts</span>
+            <span class="author-link icon-link" itemprop="url"><a href="http://weibo/popantelop">About</a></span>
         </div>
     </div>
     
@@ -1005,7 +1272,7 @@ language:       en
 <script src="/js/post.js"></script>        
         <footer class="site-footer">
     <button class="go-to-top"></button>
-    <p class="copyright"><a href="" title="jekyllDecent">jekyllDecent</a> © 2016 | <a href="/feed.xml" title="RSS Feed">RSS Feed</a></p>
+    <p class="copyright"><a href="" title="Labby Yang">Labby Yang</a> © 2016 | <a href="/feed.xml" title="RSS Feed">RSS Feed</a></p>
     <p class="poweredby">powered by <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> with the <a href="https://github.com/jwillmer/jekyllDecent" title="jekyllDecent Theme">jekyllDecent</a> theme</p>
 </footer>
     </div>

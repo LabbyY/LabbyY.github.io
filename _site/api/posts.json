@@ -2,6 +2,28 @@
 
   
     {
+        "title": "8.7 CGC Meeting Record",
+        "category": "Meeting Record",
+        "url": "/blog/meeting%20record/secondmeeting",
+        "tags": ["meetingrecord"],
+        "date": "2016-08-07 00:00:00 +0800",
+        "language": "en"
+    },
+  
+
+  
+    {
+        "title": "7.31 CGC Meeting Record",
+        "category": "Meeting Record",
+        "url": "/blog/meeting%20record/firstmeeting",
+        "tags": ["meetingrecord"],
+        "date": "2016-07-31 00:00:00 +0800",
+        "language": "en"
+    },
+  
+
+  
+    {
         "title": "Theme Installation and Usage",
         "category": "Readme",
         "url": "/blog/readme/Readme",
@@ -14,8 +36,8 @@
   
     {
         "title": "Theme Features",
-        "category": "Features",
-        "url": "/blog/features/Features",
+        "category": "Old Features",
+        "url": "/blog/old%20features/Features",
         "tags": ["Jekyll","Theme","GitHub","Installation"],
         "date": "2016-06-07 18:10:00 +0800",
         "language": "en"
@@ -25,8 +47,8 @@
   
     {
         "title": "YAML Custom Features",
-        "category": "Features",
-        "url": "/blog/features/YAML-Features",
+        "category": "Old Features",
+        "url": "/blog/old%20features/YAML-Features",
         "tags": ["Jekyll","YAML","Features","Explained"],
         "date": "2016-04-06 05:40:00 +0800",
         "language": "en"
@@ -36,8 +58,8 @@
   
     {
         "title": "This post demonstrates post content styles",
-        "category": "Features",
-        "url": "/blog/features/Content",
+        "category": "Old Features",
+        "url": "/blog/old%20features/Content",
         "tags": ["Jekyll","Content","Demo"],
         "date": "2016-03-05 00:00:00 +0800",
         "language": "en"

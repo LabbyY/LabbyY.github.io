@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://LabbyY.github.io//blog/meeting%2520record/secondmeeting</loc>
+<lastmod>2016-08-07T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://LabbyY.github.io//blog/meeting%2520record/firstmeeting</loc>
+<lastmod>2016-07-31T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://LabbyY.github.io//blog/readme/Readme</loc>
 <lastmod>2016-06-08T23:25:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://LabbyY.github.io//blog/features/Features</loc>
+<loc>http://LabbyY.github.io//blog/old%2520features/Features</loc>
 <lastmod>2016-06-07T18:10:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://LabbyY.github.io//blog/features/YAML-Features</loc>
+<loc>http://LabbyY.github.io//blog/old%2520features/YAML-Features</loc>
 <lastmod>2016-04-06T05:40:00+08:00</lastmod>
 </url>
 <url>
-<loc>http://LabbyY.github.io//blog/features/Content</loc>
+<loc>http://LabbyY.github.io//blog/old%2520features/Content</loc>
 <lastmod>2016-03-05T00:00:00+08:00</lastmod>
 </url>
 <url>
