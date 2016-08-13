@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://LabbyY.github.io//blog/notes/vagrantnotes</loc>
+<lastmod>2016-08-14T00:00:00+08:00</lastmod>
+</url>
+<url>
 <loc>http://LabbyY.github.io//blog/meeting%2520record/secondmeeting</loc>
 <lastmod>2016-08-07T00:00:00+08:00</lastmod>
 </url>
@@ -31,12 +35,9 @@
 <loc>http://LabbyY.github.io//about/</loc>
 </url>
 <url>
+<loc>http://LabbyY.github.io//bookmark/</loc>
+</url>
+<url>
 <loc>http://LabbyY.github.io//</loc>
-</url>
-<url>
-<loc>http://LabbyY.github.io//offline-warning/</loc>
-</url>
-<url>
-<loc>http://LabbyY.github.io//offline</loc>
 </url>
 </urlset>

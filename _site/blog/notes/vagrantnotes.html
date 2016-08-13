@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>7.31 CGC Meeting Record</title>
-    <meta name="description" content="Tips">
+    <title>Vagrant Notes</title>
+    <meta name="description" content="Install Vagrant">
   
     
-    <meta name="keywords" content="meetingrecord">
+    <meta name="keywords" content="note">
     
 
     <meta name="HandheldFriendly" content="True">
@@ -19,7 +19,7 @@
 	
     <!-- Open Graph data -->
 
-	<meta property="og:title" content="7.31 CGC Meeting Record">
+	<meta property="og:title" content="Vagrant Notes">
 	<meta property="og:type" content="article">
 
 
@@ -29,10 +29,10 @@
 
 
 <meta property="og:site_name" content="Labby Yang">
-<meta property="og:description" content="Tips">
+<meta property="og:description" content="Install Vagrant">
 
 
-<meta property="og:url" content="/blog/meeting%20record/firstmeeting">
+<meta property="og:url" content="/blog/notes/vagrantnotes">
 
 
     
@@ -41,11 +41,11 @@
 
 
 
-<meta property="article:published_time" content="2016-07-31T00:00:00+08:00">
+<meta property="article:published_time" content="2016-08-14T00:00:00+08:00">
 
 
 
-<meta property="article:tag" content="meetingrecord">
+<meta property="article:tag" content="note">
 
 <!-- End: Open Graph data -->	
 	<!-- Twitter data -->
@@ -58,15 +58,15 @@
 
 
 
-<meta name="twitter:title" content="7.31 CGC Meeting Record">
+<meta name="twitter:title" content="Vagrant Notes">
 
 
 
 
-<meta name="twitter:url" content="/blog/meeting%20record/firstmeeting">
+<meta name="twitter:url" content="/blog/notes/vagrantnotes">
 
 
-<meta name="twitter:description" content="Tips">
+<meta name="twitter:description" content="Install Vagrant">
 
 <meta name="twitter:image:src" content="/media/img/universe1.jpg">
 <!-- End: Twitter data -->	
@@ -147,59 +147,36 @@
     <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
         <header class="post-header short-diver">
-            <h1 class="post-title" itemprop="name headline">7.31 CGC Meeting Record</h1>
+            <h1 class="post-title" itemprop="name headline">Vagrant Notes</h1>
             <section class="post-meta">
-                <time datetime="2016-07-31T00:00:00+08:00" itemprop="datePublished">Jul 31, 2016</time> 
+                <time datetime="2016-08-14T00:00:00+08:00" itemprop="datePublished">Aug 14, 2016</time> 
                 on
                 
-                <span>meetingrecord</span>
+                <span>note</span>
                 
             </section>
         </header>
 
         <section class="post-content short-diver" itemprop="articleBody">
-            <h3 id="tips">Tips</h3>
+            <h2 id="install-vagrant">Install Vagrant</h2>
+
+<h2 id="use-vagrant">Use Vagrant</h2>
 
 <ul>
-  <li>Vagrant 安装完毕后检查 vagrantfile</li>
-  <li>要在 <a href="http://Gitub.com">github</a> 上查找某关键词的相关内容，试着加 “<strong>awosome-</strong>” 前缀。如：<code>awesome-markdown</code>
-</li>
+  <li>vagrant up 时 outprint 的以下信息表示了 共享目录的 host 路径及 vm 路径：</li>
+</ul>
+
+<p><code>==&gt; default: Mounting shared folders...</code></p>
+
+<p><code>default: /vagrant =&gt; /Users/xiaoxue/Desktop/ninghao-project</code></p>
+
+<ul>
   <li>
-<strong>irb</strong> 的好处在于可以帮助你实时执行代码。
-    <ul>
-      <li>使用 <code>gem install pry</code> 安装 pry（pry 对 irb 进行了封装，能够高亮显示关键词，便于阅读）</li>
-    </ul>
+    <p>要配置共享目录，在Vagrantfile中查找以下项并修改：</p>
+
+    <p><code>config.vm.synced_folder "host路径（以vagrantfile所在目录为根目录）", "虚拟路径"</code></p>
   </li>
-  <li>
-<a href="http://ruby-doc.org">ruby-doc</a> 上有关于ruby core API 和 standard API 的说明。（据说核心库的文档还不错，标准库就很烂）</li>
-  <li>使用 <a href="https://gems.ruby-china.org">ruby-china</a> 上的更新源，将ruby的更新源修改为不会被墙的版本：<code>gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/</code>
-</li>
 </ul>
-
-<h4 id="markdown">关于Markdown</h4>
-
-<ul>
-  <li>
-<strong>Github Page</strong> 是 <a href="http://Gitub.com">github</a> 的一个功能，将 md 文件上传后就可以帮你自动生成静态博客。
-    <ul>
-      <li>可用的上传工具：Hexo, Octopress, Jeklly。 (Jeklly提供的模板可以一看)</li>
-    </ul>
-  </li>
-  <li>Gitbook Editor 可以用来写 md 书。</li>
-  <li>
-<a href="http://Gitub.com">Github</a> 和<a href="http://jianshu.com">简书</a>都可以识别并直接编辑 md 文件。</li>
-</ul>
-
-<h3 id="to-do-list">To-Do List</h3>
-
-<ul>
-  <li>尝试给 Windows 安装 Vagrant 及 Ruby on Rails。   √</li>
-  <li>熟悉使用 Github。     √</li>
-  <li>学习 <a href="https://www.coursera.org/learn/ruby-on-rails-intro">Coursera</a> 课程。     √</li>
-  <li>建立一个用 Markdown 写的博客。√</li>
-  <li>Try Git !   √</li>
-</ul>
-
 
         </section>
 

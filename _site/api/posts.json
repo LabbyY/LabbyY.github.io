@@ -2,6 +2,17 @@
 
   
     {
+        "title": "Vagrant Notes",
+        "category": "Notes",
+        "url": "/blog/notes/vagrantnotes",
+        "tags": ["note"],
+        "date": "2016-08-14 00:00:00 +0800",
+        "language": "en"
+    },
+  
+
+  
+    {
         "title": "8.7 CGC Meeting Record",
         "category": "Meeting Record",
         "url": "/blog/meeting%20record/secondmeeting",
