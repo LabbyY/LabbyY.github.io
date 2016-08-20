@@ -5,8 +5,8 @@
     <description>Record my life.etc</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-      <pubDate>Sun, 14 Aug 2016 00:35:43 +0800</pubDate>
-    <lastBuildDate>Sun, 14 Aug 2016 00:35:43 +0800</lastBuildDate>
+      <pubDate>Sun, 21 Aug 2016 01:03:15 +0800</pubDate>
+    <lastBuildDate>Sun, 21 Aug 2016 01:03:15 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -39,6 +39,153 @@
         
         
         <category>Notes</category>
+        
+      </item>
+    
+      <item>
+        <title>8.14 CGC Meeting Record</title>
+        <description>&lt;h3 id=&quot;section&quot;&gt;上周回顾&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;部分人不太懂第八章存取器&lt;/li&gt;
+  &lt;li&gt;部分人不太懂与块相关的内容&lt;/li&gt;
+  &lt;li&gt;3~4人进行了线上Coursera课程，1人完成&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;难点讲解&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;作用域和存取器&lt;/p&gt;
+
+    &lt;p&gt;属性是封装在类中的，因此需要存取器来对属性进行存取操作&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;鸭子类型&lt;/p&gt;
+
+    &lt;p&gt;ruby不会对数据的具体类型进行区分，如果某方法需要对传递进来的参数进行处理，那么只要该参数能够进行该项处理，就可以执行程序，而不必对传参类型进行区分。
+使用&lt;code&gt;method.respond_to?(:method_name)&lt;/code&gt;来判断某对象是否实现了该方法。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;块&lt;/p&gt;
+
+    &lt;p&gt;是任何方法的隐藏参数（因此即使不使用也可以传进去）
+它一定要依附于方法才可以使用。
+使用&lt;code&gt;yield&lt;/code&gt;关键字增加了灵活度，在需要执行某方法的时候才把它取出来。&lt;/p&gt;
+
+    &lt;p&gt;在 module、class、def等关键字构建的作用域（封闭的空间）中：
+  - 块为这些封闭空间中的属性提供了穿越空间的可能
+  - 块扩展了这些封闭空间，以便随时能在&lt;code&gt;yield&lt;/code&gt;关键字处执行任何代码块&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;gem：Ruby软件包管理工具&lt;/p&gt;
+
+    &lt;p&gt;为代码共享提供了统一标准&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rails-&quot;&gt;Rails 简介&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;是一个web开发框架（参考汉东发的pdf）&lt;/li&gt;
+  &lt;li&gt;全栈&lt;/li&gt;
+  &lt;li&gt;是一个MVC框架
+    &lt;ul&gt;
+      &lt;li&gt;模型 - 处理逻辑业务&lt;/li&gt;
+      &lt;li&gt;控制器 - 处理路由页面跳转&lt;/li&gt;
+      &lt;li&gt;视图 - 生成html&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Restful&lt;/li&gt;
+  &lt;li&gt;通过&lt;code&gt;rails new alias&lt;/code&gt;新建一个rails项目&lt;/li&gt;
+  &lt;li&gt;通过&lt;code&gt;rails console&lt;/code&gt;运行&lt;/li&gt;
+  &lt;li&gt;conifg =&amp;gt; routes.rb 中指定了路由方法。&lt;/li&gt;
+  &lt;li&gt;app=&amp;gt;controllers中指定了响应的controller.
+    &lt;ul&gt;
+      &lt;li&gt;使用routes =&amp;gt; resources 中的匹配路径名命名：route_controller&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;db下的文件定义了数据表的形式&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;  rails generate migration table_name #生成一个解析表原型的文件
+  rake db:migrate #创建数据表
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;对象关系模型
+    &lt;ul&gt;
+      &lt;li&gt;module下的类为映射类（只要声明类名即可）&lt;/li&gt;
+      &lt;li&gt;数据表映射出了一个类，由该类的实例来完成数据表的增删改查&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;-b 0.0.0.0 vm&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;to-do-list&quot;&gt;To-Do list&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;读汉东发的pdf，了解元编程、gem、ruby的应用领域&lt;/li&gt;
+  &lt;li&gt;继续学习Coursera&lt;/li&gt;
+  &lt;li&gt;根据栗子制作一个可以增删改的 to-do list Web 应用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;问题&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;View中的标签怎么查询？&amp;lt;%= %&amp;gt;和&amp;lt;% %&amp;gt;有什么区别？&lt;/li&gt;
+  &lt;li&gt;View中的类是什么类？比如box&lt;/li&gt;
+  &lt;li&gt;controller中edit空方法的意义是什么？&lt;/li&gt;
+  &lt;li&gt;以下在TodosController方法中的&lt;code&gt;:todo&lt;/code&gt;是从哪来的？
+&lt;code&gt;ruby
+def todo_params
+  todo_params = params[:todo]
+  todo_params ? todo_params.permit(:title, :remark, :is_finished) : {}
+end
+&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;_form.html.erb&lt;/code&gt;命名前的下划线是什么样的约定？&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;resource.rb&lt;/code&gt;下的&lt;code&gt;resources :todos&lt;/code&gt;是用来干什么的？&lt;/li&gt;
+  &lt;li&gt;index 和 form 中的 @todos 与 @todo 有什么关系吗？&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;以下方法中的&lt;code&gt;@todo&lt;/code&gt;是新建了一个变量后修改变量中的attribute还是直接修改params中的数据？&lt;code&gt;.new&lt;/code&gt;的意义何在？
+  &lt;code&gt;ruby
+def build_todo
+  @todo ||= todo_scope.new
+  @todo.attributes = todo_params
+end
+ &lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;View 和 Controller如何交互的？以delete为例&lt;/p&gt;
+
+    &lt;p&gt;&lt;code&gt;&amp;lt;%= link_to &quot;Delete&quot;, todo_path(todo.id), method: :delete %&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;def destroy
+  @todo.destroy
+  respond_to do |format|
+    format.html { redirect_to todos_url, notice: &#39;删除成功&#39; }
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+  &lt;/li&gt;
+  &lt;li&gt;build_todo方法有什么作用？？
+&lt;code&gt;ruby
+def build_todo
+  @todo ||= todo_scope.new
+  @todo.attributes = todo_params
+end
+&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;update 方法和 edit 方法有什么区别？&lt;/li&gt;
+  &lt;li&gt;controller 私有方法改写失败&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 14 Aug 2016 00:00:00 +0800</pubDate>
+        <link>/blog/meeting%20record/thirdmeeting</link>
+        <guid isPermaLink="true">/blog/meeting%20record/thirdmeeting</guid>
+        
+        <category>meetingrecord</category>
+        
+        
+        <category>Meeting Record</category>
         
       </item>
     
