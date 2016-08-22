@@ -108,6 +108,7 @@ cover:             /media/img/universe1.jpg
     end
     ```
   - build_todo方法有什么作用？？
+  
     ```ruby
     def build_todo
       @todo ||= todo_scope.new
