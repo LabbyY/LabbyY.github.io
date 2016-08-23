@@ -1,7 +1,7 @@
 ---
 layout:            post
-title:             "8.14 CGC Meeting Record"
-menutitle:         "8.14 CGC Meeting Record"
+title:             "8.21 CGC Meeting Record"
+menutitle:         "8.21 CGC Meeting Record"
 category:          Meeting Record
 author:            LabbyY
 tags:              meetingrecord

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>8.14 CGC Meeting Record</title>
-    <meta name="description" content="上周回顾">
+    <title>8.21 CGC Meeting Record</title>
+    <meta name="description" content="重新做一遍todo-list">
   
     
     <meta name="keywords" content="meetingrecord">
@@ -19,7 +19,7 @@
 	
     <!-- Open Graph data -->
 
-	<meta property="og:title" content="8.14 CGC Meeting Record">
+	<meta property="og:title" content="8.21 CGC Meeting Record">
 	<meta property="og:type" content="article">
 
 
@@ -29,10 +29,10 @@
 
 
 <meta property="og:site_name" content="Labby Yang">
-<meta property="og:description" content="上周回顾">
+<meta property="og:description" content="重新做一遍todo-list">
 
 
-<meta property="og:url" content="/blog/meeting%20record/thirdmeeting">
+<meta property="og:url" content="/blog/meeting%20record/forthmeeting">
 
 
     
@@ -41,7 +41,7 @@
 
 
 
-<meta property="article:published_time" content="2016-08-14T00:00:00+08:00">
+<meta property="article:published_time" content="2016-08-21T00:00:00+08:00">
 
 
 
@@ -58,15 +58,15 @@
 
 
 
-<meta name="twitter:title" content="8.14 CGC Meeting Record">
+<meta name="twitter:title" content="8.21 CGC Meeting Record">
 
 
 
 
-<meta name="twitter:url" content="/blog/meeting%20record/thirdmeeting">
+<meta name="twitter:url" content="/blog/meeting%20record/forthmeeting">
 
 
-<meta name="twitter:description" content="上周回顾">
+<meta name="twitter:description" content="重新做一遍todo-list">
 
 <meta name="twitter:image:src" content="/media/img/universe1.jpg">
 <!-- End: Twitter data -->	
@@ -147,9 +147,9 @@
     <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
 
         <header class="post-header short-diver">
-            <h1 class="post-title" itemprop="name headline">8.14 CGC Meeting Record</h1>
+            <h1 class="post-title" itemprop="name headline">8.21 CGC Meeting Record</h1>
             <section class="post-meta">
-                <time datetime="2016-08-14T00:00:00+08:00" itemprop="datePublished">Aug 14, 2016</time> 
+                <time datetime="2016-08-21T00:00:00+08:00" itemprop="datePublished">Aug 21, 2016</time> 
                 on
                 
                 <span>meetingrecord</span>
@@ -158,143 +158,87 @@
         </header>
 
         <section class="post-content short-diver" itemprop="articleBody">
-            <h3 id="section">上周回顾</h3>
+            <h3 id="todo-list">重新做一遍todo-list</h3>
+
+<h4 id="model--db">Model 和 DB</h4>
 
 <ul>
-  <li>部分人不太懂第八章存取器</li>
-  <li>部分人不太懂与块相关的内容</li>
-  <li>3~4人进行了线上Coursera课程，1人完成</li>
-</ul>
-
-<h3 id="section-1">难点讲解</h3>
-
-<ul>
+  <li>rails目录的组织架构、重要的文件和文件夹</li>
   <li>
-    <p>作用域和存取器</p>
+    <p>要添加用户信息，<code>rails new</code>,修改<code>Gemfile</code>中的gem source后，新加一个用来加密的包：</p>
 
-    <p>属性是封装在类中的，因此需要存取器来对属性进行存取操作</p>
-  </li>
-  <li>
-    <p>鸭子类型</p>
-
-    <p>ruby不会对数据的具体类型进行区分，如果某方法需要对传递进来的参数进行处理，那么只要该参数能够进行该项处理，就可以执行程序，而不必对传参类型进行区分。
-使用<code>method.respond_to?(:method_name)</code>来判断某对象是否实现了该方法。</p>
-  </li>
-  <li>
-    <p>块</p>
-
-    <p>是任何方法的隐藏参数（因此即使不使用也可以传进去）
-它一定要依附于方法才可以使用。
-使用<code>yield</code>关键字增加了灵活度，在需要执行某方法的时候才把它取出来。</p>
-
-    <p>在 module、class、def等关键字构建的作用域（封闭的空间）中：
-  - 块为这些封闭空间中的属性提供了穿越空间的可能
-  - 块扩展了这些封闭空间，以便随时能在<code>yield</code>关键字处执行任何代码块</p>
-  </li>
-  <li>
-    <p>gem：Ruby软件包管理工具</p>
-
-    <p>为代码共享提供了统一标准</p>
-  </li>
-</ul>
-
-<h3 id="rails-">Rails 简介</h3>
-
-<ul>
-  <li>是一个web开发框架（参考汉东发的pdf）</li>
-  <li>全栈</li>
-  <li>是一个MVC框架
-    <ul>
-      <li>模型 - 处理逻辑业务</li>
-      <li>控制器 - 处理路由页面跳转</li>
-      <li>视图 - 生成html</li>
-    </ul>
-  </li>
-  <li>Restful</li>
-  <li>通过<code>rails new alias</code>新建一个rails项目</li>
-  <li>通过<code>rails console</code>运行</li>
-  <li>conifg =&gt; routes.rb 中指定了路由方法。</li>
-  <li>app=&gt;controllers中指定了响应的controller.
-    <ul>
-      <li>使用routes =&gt; resources 中的匹配路径名命名：route_controller</li>
-    </ul>
-  </li>
-  <li>
-    <p>db下的文件定义了数据表的形式</p>
-
-    <pre><code class="language-ruby">  rails generate migration table_name #生成一个解析表原型的文件
-  rake db:migrate #创建数据表
-</code></pre>
-  </li>
-  <li>对象关系模型
-    <ul>
-      <li>module下的类为映射类（只要声明类名即可）</li>
-      <li>数据表映射出了一个类，由该类的实例来完成数据表的增删改查</li>
-    </ul>
-  </li>
-  <li>-b 0.0.0.0 vm</li>
-</ul>
-
-<h3 id="to-do-list">To-Do list</h3>
-
-<ul>
-  <li>读汉东发的pdf，了解元编程、gem、ruby的应用领域</li>
-  <li>继续学习Coursera</li>
-  <li>根据栗子制作一个可以增删改的 to-do list Web 应用</li>
-</ul>
-
-<h3 id="section-2">问题</h3>
-
-<ul>
-  <li>View中的标签怎么查询？&lt;%= %&gt;和&lt;% %&gt;有什么区别？</li>
-  <li>View中的类是什么类？比如box</li>
-  <li>controller中edit空方法的意义是什么？</li>
-  <li>以下在TodosController方法中的<code>:todo</code>是从哪来的？
-<code>ruby
-def todo_params
-  todo_params = params[:todo]
-  todo_params ? todo_params.permit(:title, :remark, :is_finished) : {}
-end
-</code>
-</li>
-  <li>
-<code>_form.html.erb</code>命名前的下划线是什么样的约定？</li>
-  <li>
-<code>resource.rb</code>下的<code>resources :todos</code>是用来干什么的？</li>
-  <li>index 和 form 中的 <a href="https://github.com/todos" class="user-mention">@todos</a> 与 <a href="https://github.com/todo" class="user-mention">@todo</a> 有什么关系吗？</li>
-  <li>
-    <p>以下方法中的<code>@todo</code>是新建了一个变量后修改变量中的attribute还是直接修改params中的数据？<code>.new</code>的意义何在？
-  <code>ruby
-def build_todo
-  @todo ||= todo_scope.new
-  @todo.attributes = todo_params
-end
- </code></p>
-  </li>
-  <li>
-    <p>View 和 Controller如何交互的？以delete为例</p>
-
-    <p><code>&lt;%= link_to "Delete", todo_path(todo.id), method: :delete %&gt;</code></p>
-
-    <pre><code class="language-ruby">def destroy
-  @todo.destroy
-  respond_to do |format|
-    format.html { redirect_to todos_url, notice: '删除成功' }
-  end
-end
+    <pre><code class="language-Ruby">#加密密码
+gem 'bcrypt', '~&gt;3.1.7'
 </code></pre>
   </li>
   <li>
-    <p>build_todo方法有什么作用？？</p>
+    <p>新建一个migration</p>
 
-    <pre><code class="language-ruby">def build_todo
-  @todo ||= todo_scope.new
-  @todo.attributes = todo_params
-end
-</code></pre>
+    <p><code>Ruby
+ #单词首字母大写、结尾是复数
+ rails generate migration CreateTodos
+</code></p>
   </li>
-  <li>update 方法和 edit 方法有什么区别？</li>
-  <li>controller 私有方法改写失败</li>
+  <li>
+    <p>在db-&gt;migration下的文件中加入字段,并创建数据库、表、model</p>
+
+    <pre><code class="language-ruby">rake db:create
+rake db:migrate
+#然后在model中新建一个todo.rb;
+class Todo &lt; ApplicationRecord
+
+end
+#todo的命名也是约定，必须是数据库表的单数形式，因为它表示的是单张表
+rake c
+rake console #or
+#进入rails的控制台（与irb类似），新建并插入一条数据
+todo = Todo.new(title: 'title name', finished: false)
+todo.save
+#新建一个migration，保存一些默认值
+rails generate migration ChangeTodosFinishedDefault
+#表名，字段名，类型，默认值
+change_column :todos, :finished, :boolean, default: false
+#新建一张user表
+rails generate migration CreateUsers
+#表中的字段
+t.string :nickname
+t.string :email
+t.string :password_digest
+#上面安装的加密包只识别password_digest字段并将它加密
+#为了满足一对多的用户-list模型，需要新加一张给todolist添加userid的表
+rails generate migration AddUserIdToUsers
+#↓
+add_column :todos, :user_id, :integer
+add_index :todos, :user_id
+#执行migration
+rake db:migrate
+#在user和todo的model中加入对映关系和安全密码
+
+class User &lt; ApplicationRecord
+  has_secure_password
+  has_many :todos
+end
+
+class Todo &lt; ApplicationRecord
+  belongs_to :user
+end
+
+#在控制台里，用authenticate方法验证密码的正确性，正确返回user对象，错误返回false
+u = User.new
+u.nickname = "Labby"
+u.email = "e@163.com"
+u.password = "rrrttt"
+u.authenticate("rrrttt")
+</code></pre>
+
+    <h4 id="section">创建前端页面</h4>
+
+    <ul>
+      <li>使用<code>rake routes</code>查看 get与controller中方法的映射关系</li>
+      <li>form 表单可以发送post请求</li>
+      <li>修改routes.rb，添加sessions资源</li>
+    </ul>
+  </li>
 </ul>
 
         </section>
